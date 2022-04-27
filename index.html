@@ -9,35 +9,26 @@
 				margin: 0;
 				padding: 0;
 			}
-
 			body {
-				background-color: #defcff;
+				background-color: #f0f0f0;
 			}
-
 			.box1 {
 				margin: 0 auto;
-			}
-
-			.box1 #box1 {
 				height: 100px;
 				width: 980px;
-				background-color: #234755;
+				background-color: #52527a;
 				margin: 0 auto;
+				box-shadow: 0px 5px 5px 5px #919191;
+				border-radius: 15px;
 			}
-
-			.box1 #box1 p,
-			.box1 #box1 span {
-				display: inline-block;
-			}
-
-			.box1 #box1 p {
+			.box1 p,.box1 span {display: inline-block;}
+			.box1 p {
 				line-height: 100px;
-				padding-left: 20px;
+				padding-left: 50px;
 				font-size: 40px;
 				color: #ffffff;
 			}
-
-			.box1 #box1 span {
+			.box1 span {
 				float: right;
 				color: #ffffff;
 				font-size: 40px;
@@ -46,13 +37,13 @@
 			}
 
 			.box2 {
-				margin: 0 auto;
+				margin: 10px auto;
 				width: 980px;
 				height: 600px;
-				background-image: url(img/76e62ce849bd493c98b55173aeec75f8.jpg);
+				background-image:url("https://img.gejiba.com/images/1080d5aae9af3bf7696f74c74b000d1e.jpg");
 				background-size: 120%;
-				border-bottom-left-radius: 50px;
-				border-bottom-right-radius: 50px;
+				border-radius: 50px;
+				box-shadow: 0px 5px 5px 5px #919191;
 			}
 
 			.box2 h1 {
@@ -60,23 +51,54 @@
 				padding-top: 160px;
 				font-size: 80px;
 				color: #ffffff;
+				text-shadow:5px 5px 5px #8e9793;
 			}
-
 			.box2 p {
 				text-align: center;
 				color: #ffffff;
 				font-size: 50px;
 				padding-top: 20px;
+				text-shadow:5px 5px 5px #a5aeb3;
 			}
 
 			.box2 iframe {
 				margin-top: 80px;
-				margin-left: 225px;
+				margin-left: 195px;
+			}
+			
+			.box3 {
+				width: 980px;
+				border-left: 5px solid  #52527a ;
+				border-right: 5px solid  #52527a ;
+			}
+			.box3 nav {
+				display: inline-block;
+				margin-left: 24px;
+				margin-top: 30px;
+				width: 291px;
+				height: 200px;
+				background-color: #768978;
+				box-shadow: 0px 5px 5px 5px #919191;
+				border-radius: 50px;
+				text-align: center;
+			}
+			.box3 nav i{
+				font-size: 100px;
+				margin-top: 35px;
+				color: #ffffff;
+				text-shadow:3px 3px 3px #5b5b5b;
+			}
+			.box3 nav p {
+				margin-top: 8px;
+				font-size: 30px;
+				font-weight: 700;
+				color: #000000;
+				text-shadow:2px 2px 2px #767676;
 			}
 		</style>
 	</head>
 	<body>
-		<script>
+		<!-- <script>
 			loopy()
 
 			function loopy() {
@@ -86,18 +108,30 @@
 				}
 				alert("欢迎访问")
 			}
-		</script>
+		</script> -->
 		<div class="box1">
-			<div id="box1">
 				<p>ZDD-ST</p>
 				<span><i class="fa-solid fa-radiation"></i></span>
-			</div>
 		</div>
 		<div class="box2">
 			<h1>欢迎</h1>
 			<p>这是属于我们的空间</p>
-			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=200
+			<iframe frameborder="no" border="0" width="600px"
 				src="//music.163.com/outchain/player?type=2&id=479598964&auto=0&height=66"></iframe>
+		</div>
+		<div class="box3">
+			<nav >
+				<i class="fa-solid fa-image"></i>
+				<p>相册</p>
+			</nav>
+			<nav >
+				<i class="fa-solid fa-laptop-file"></i>
+				<p>题库</p>
+			</nav>
+			<nav >
+				<i class="fa-solid fa-music"></i>
+				<p>音乐</p>
+			</nav>
 		</div>
 	</body>
 </html>

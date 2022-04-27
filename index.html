@@ -5,36 +5,99 @@
 		<title></title>
 		<link rel="stylesheet" href="css/all.min.css">
 		<style type="text/css">
-			@font-face {
-				font-family:xie;
-				src: url(font/xie.ttf);
+			* {
+				margin: 0;
+				padding: 0;
 			}
-			body{
-				width: 365px;
-				height: 667px;
-				background-color: azure;
-				margin: 20px auto;
+
+			body {
+				background-color: #defcff;
 			}
-			.box1 header {
-				height: 60px;
-				width: 365px;
-				border-radius: 20px;
-				box-shadow: 0px 5px 5px 2px #e6e9ff;
-				background-color: #d9ddff;
-				text-align: center;
-				line-height: 60px;
+
+			.box1 {
+				margin: 0 auto;
+			}
+
+			.box1 #box1 {
+				height: 100px;
+				width: 980px;
+				background-color: #234755;
+				margin: 0 auto;
+			}
+
+			.box1 #box1 p,
+			.box1 #box1 span {
+				display: inline-block;
+			}
+
+			.box1 #box1 p {
+				line-height: 100px;
+				padding-left: 20px;
 				font-size: 40px;
-				font-family: xie;
-				font-weight: 700;
 				color: #ffffff;
+			}
+
+			.box1 #box1 span {
+				float: right;
+				color: #ffffff;
+				font-size: 40px;
+				line-height: 100px;
+				padding-right: 20px;
+			}
+
+			.box2 {
+				margin: 0 auto;
+				width: 980px;
+				height: 600px;
+				background-image: url(img/76e62ce849bd493c98b55173aeec75f8.jpg);
+				background-size: 120%;
+				border-bottom-left-radius: 50px;
+				border-bottom-right-radius: 50px;
+			}
+
+			.box2 h1 {
+				text-align: center;
+				padding-top: 160px;
+				font-size: 80px;
+				color: #ffffff;
+			}
+
+			.box2 p {
+				text-align: center;
+				color: #ffffff;
+				font-size: 50px;
+				padding-top: 20px;
+			}
+
+			.box2 iframe {
+				margin-top: 80px;
+				margin-left: 225px;
 			}
 		</style>
 	</head>
 	<body>
+		<script>
+			loopy()
+
+			function loopy() {
+				var sWord = ""
+				while (sWord != "151836") { //设置密码
+					sWord = prompt("输入正确密码才能登陆!")
+				}
+				alert("欢迎访问")
+			}
+		</script>
 		<div class="box1">
-			<header>
-				ZDD-ST
-			</header>
+			<div id="box1">
+				<p>ZDD-ST</p>
+				<span><i class="fa-solid fa-radiation"></i></span>
+			</div>
+		</div>
+		<div class="box2">
+			<h1>欢迎</h1>
+			<p>这是属于我们的空间</p>
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=200
+				src="//music.163.com/outchain/player?type=2&id=479598964&auto=0&height=66"></iframe>
 		</div>
 	</body>
 </html>
